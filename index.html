@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Ball Super API</title>
+    <script src="https://kit.fontawesome.com/d2f7834a7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="shortcut icon"
+    href="assets/logo-32x32.png"
+    type="image/x-icon"
+    />
+  </head>
+  <body class="hidden">
+    <div class="loader-body visible">
+      <div class="loader">
+        <img src="assets/balls.png" alt="dragon balls">
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div class="company">
+          <img src="assets/logo.png" alt="logo" width="150" loading="lazy"/>
+        </div>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="assets/hamburger-icon.svg" alt="open">
+        </button>
+        <ul class="nav-menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="assets/close-icon.svg" alt="close">
+          </button>
+          <li class="menu-link"><a href="#main" class="selected">Inicio</a></li>
+          <li class="menu-link"><a href="#character-container">Buscar personaje</a></li>
+          <li class="menu-link"><a href="#footer">Acerca de</a></li>
+          <button class="switch-theme-btn">
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <main class="container" id="main">
+      <section class="main-container container" data-dark>
+        <div class="main-content">
+          <h1 class="main-title">
+            ¡Conoce a los personajes mas icónicos de la saga de Dragon Ball
+            Super!
+          </h1>
+          <p class="main-info">
+            Descubre a los personajes que forman parte del
+            universo de Dragon Ball Super, así como sus atributos más
+            especiales, como lo son el planeta de origen, el universo del que
+            vienen, sus transformaciones, etc.
+          </p>
+        </div>
+        <div class="main-img">
+          <img src="assets/goku.png" alt="Goku" class="goku-main" loading="lazy">
+        </div>
+        <img src="assets/logo.png" alt="Logo" class="logo-main" loading="lazy">
+      </section>
+    </main>
+    <section class="character-container container" id="character-container">
+      <h2 class="character-title">
+        ¡Busca el nombre de un personaje y observa su información!
+      </h2>
+      <div class="character-search">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Introduce el nombre de un personaje"
+          class="search-input"
+        />
+        <button type="submit" id="search-button" class="search-button">Buscar</button>
+      </div>
+      <article class="character-information">
+        <div class="character-description">
+          <h3 class="char-name">Son Goku</h3>
+          <p class="character-origin">Planeta de origen: Planeta Vegeta</p>
+          <p class="character-specie">Especie: Saiyan</p>
+          <p class="character-universe">Universo: 7</p>
+          <p class="character-role">Rol: Guerrero Z</p>
+        </div>
+        <img src="assets/Goku-FnF.webp" alt="Goku" class="character-image" />
+      </article>
+    </section>
+    <footer id="footer"></footer>
+    <script type="module" src="js/app.js" defer></script>
+  </body>
+</html>
