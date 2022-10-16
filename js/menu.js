@@ -24,7 +24,7 @@ export default function menu() {
         }
       });
     },
-    { rootMargin: "-40% 0px -60% 0px" }
+    { rootMargin: "-50% 0px -50% 0px" }
   );
 
   const menuLinks = document.querySelectorAll(`.nav-menu a[href^="#"]`);

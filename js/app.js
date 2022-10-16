@@ -3,9 +3,6 @@ import getDBSdata from "./fetchData.js";
 import menu from "./menu.js";
 
 const searchButton = document.querySelector(".search-button");
-searchButton.addEventListener("click", () => {
-  getDBSdata();
-});
 
 window.addEventListener("DOMContentLoaded", switchTheme());
 window.addEventListener("load", () => {
@@ -15,5 +12,6 @@ window.addEventListener("load", () => {
   loader.style.opacity = 0;
   loader.classList.remove("visible");
   document.querySelector("body").classList.remove("hidden");
-  menu()
+  menu();
+  getDBSdata();
 });
